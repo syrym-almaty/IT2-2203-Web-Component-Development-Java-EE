@@ -19,11 +19,32 @@ First, clone the repository to your local machine using the following command:
 ```bash
 git clone https://github.com/syrym-almaty/IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE-Lab-.git
 
-Navigate to the project folder:
 cd IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE-Lab-
 
-### 2. Creating Your Own Branch
-
 # Create a new branch
-```bash
 git checkout -b student-username
+
+# Making Changes
+
+git status
+
+# Stage the files
+git add .
+
+# Commit your changes
+git commit -m "Your detailed commit message here"
+
+# Push changes to your branch
+git push origin student-username
+
+# Switch to main branch
+git checkout main
+
+# Pull the latest changes from the main branch
+git pull origin main
+
+# Switch back to your branch
+git checkout student-username
+
+# Merge the latest main branch changes into your branch
+git merge main
