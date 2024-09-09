@@ -1,13 +1,3 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic",
-<<<<<<< HEAD
-    "java.configuration.updateBuildConfiguration": "interactive"
-=======
-<<<<<<< HEAD
-    "java.configuration.updateBuildConfiguration": "interactive"
-=======
-    "java.configuration.updateBuildConfiguration": "automatic",
-    "window.autoDetectColorScheme": true
->>>>>>> 3c31e1ea2f5bb29f25ca6704fdbf5883a3ad4d6e
->>>>>>> bb4b9d4740cbc49cdbd9e59b2a870c21e1e1ae9c
+    "java.compile.nullAnalysis.mode": "automatic"
 }
