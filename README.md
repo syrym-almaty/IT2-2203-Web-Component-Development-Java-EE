@@ -18,3 +18,12 @@ First, clone the repository to your local machine using the following command:
 
 ```bash
 git clone https://github.com/syrym-almaty/IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE-Lab-.git
+
+Navigate to the project folder:
+cd IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE-Lab-
+
+### 2. Creating Your Own Branch
+
+# Create a new branch
+```bash
+git checkout -b student-username
