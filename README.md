@@ -1,4 +1,4 @@
-# IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE-Lab
+# [IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE-Lab](https://github.com/syrym-almaty/IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE)
 
 ## Overview
 
@@ -48,3 +48,5 @@ git checkout student-username
 
 # Merge the latest main branch changes into your branch
 git merge main
+```
+
