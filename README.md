@@ -262,3 +262,11 @@ mvn versions:display-dependency-updates
 mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Dserver.port=8081"
 
 ```
+```bash
+git checkout Test
+git fetch origin
+git pull origin Test
+git pull origin student-rasul
+git merge origin/student-rasul
+git push origin Test
+```
