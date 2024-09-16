@@ -16,6 +16,18 @@ Welcome to the repository for the Web Component Development Lab. In this project
 
 First, clone the repository to your local machine using the following command:
 
+
+```bash
+// in case to update your branch
+
+git branch -m main Production
+git fetch origin
+git branch -u origin/Production Production
+git remote set-head origin -a
+
+```
+
+
 ```bash
 git clone https://github.com/syrym-almaty/IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE-Lab-.git
 
