@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 
 // this is controller that belongs to Rasulg
-
+// test test
 
 public class HomeController {
     @GetMapping("/home")
