@@ -1,4 +1,4 @@
-# IT2-2208-SFT6310-36-Lab-Web-Component-Development-Java-EE-Lab
+# IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE
 
 ## Overview
 
@@ -23,7 +23,12 @@ https://git-scm.com/downloads
 First, clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/syrym-almaty/BreadcrumbsIT2-2208-SFT6310-36-Lab-Web-Component-Development-Java-EE-Lab.git
+
+// over https
+git clone https://github.com/syrym-almaty/IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE.git
+
+// over ssh
+git clone git@github.com/syrym-almaty/IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE.git
 
 cd IT2-2204-SFT6310-32-Lab-Web-Component-Development-Java-EE-Lab
 
