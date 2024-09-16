@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 
-// this is controller that belongs to Rasul
+// this is controller that belongs to Rasulg
 
 
 public class HomeController {
