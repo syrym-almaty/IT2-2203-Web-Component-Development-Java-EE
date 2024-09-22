@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE.iml" filepath="$PROJECT_DIR$/.idea/IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE-Lab-.iml" filepath="$PROJECT_DIR$/.idea/IT2-2203-SFT6310-31-Lab-Web-Component-Development-Java-EE-Lab-.iml" />
+>>>>>>> student-almara
     </modules>
   </component>
 </project>
