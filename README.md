@@ -1,96 +1,156 @@
-# IT2-2203-Web-Component-Development-Java-EE
+# Web Component Development with Java EE
 
-## Overview
+---
 
-Welcome to the repository for the Web Component Development Lab. In this project, each student will work on their own branch to contribute and learn the process of version control and collaboration using Git and GitHub. The main branch is protected and can only be updated by the instructor.
+## Welcome to the IT2-2203 Web Component Development project! Follow the instructions below to clone the repository, set up your environment, and start developing
 
+---
 
+## Cloning the Repository
 
-### Guidelines for Collaborators
-
-- **Main branch protection**: Only the instructor can make changes to the `main` branch.
-- **Student branches**: Each student must create and work on their own branch, named after their GitHub username (e.g., `student-username`).
-- **Feature development**: All changes should be made in your individual branch. Once completed, changes can be pushed and reviewed.
-
-## Download Git for windows
-
-https://git-scm.com/downloads
-
-## Instructions for Students
-
-### 1. Cloning the Repository
-
-First, clone the repository to your local machine using the following command:
+> To get started, clone the repository using the command below:
 
 ```bash
+
 git clone git@github.com:syrym-almaty/IT2-2203-Web-Component-Development-Java-EE.git
+```
+
+## Navigate into the project directory
+
+```bash
 
 cd IT2-2203-Web-Component-Development-Java-EE
-
 ```
+
+> Build and Run the Application
+> You can build and run the application with Docker using the following command:
+
 ```bash
-# Build and Run with One Command where the Dockerfile is located
 
 docker build -t my-spring-app . && docker run -p 8080:8080 my-spring-app
+```
 
-# Command to Run
+## Alternatively, you can use Docker Compose
+
+```bash
 
 docker-compose up --build
 
 ```
+
+> Working with Branches
+> Create a New Branch
+> To create a new branch for your work, use:
+
 ```bash
-# Create a new branch
+
 git checkout -b student-username
 
-# Making Changes
+```
+
+## Making Changes
+
+> Check the status of your changes:
+
+```bash
 
 git status
 
-# Stage the files
+```
+
+## Stage and Commit Your Changes
+
+> Stage all changes you wish to commit:
+
+```bash
+
 git add .
 
-# Commit your changes
+```
+
+> Then commit your changes with a descriptive message:
+
+```bash
+
 git commit -m "Your detailed commit message here"
 
-# Push changes to your branch
+```
+
+## Push Changes to Your Branch
+
+> Push your changes to the remote repository:
+
+```bash
+
 git push origin student-username
 
-# Switch to main branch
+```
+
+## Keeping Your Branch Updated
+
+> Switch to the Main Branch
+> To switch back to the main branch, use:
+
+```bash
+
 git checkout main
 
-# Pull the latest changes from the main branch
+```
+
+## Pull the Latest Changes
+
+> Fetch the latest changes from the main branch:
+
+```bash
+
 git pull origin main
 
-# Switch back to your branch
+```
+
+## Merge Changes into Your Branch
+
+> Switch back to your branch:
+
+```bash
+
 git checkout student-username
 
-# Merge the latest main branch changes into your branch
+```
+
+> Then merge the latest changes from the main branch into your branch:
+
+```bash
+
 git merge main
 
 ```
 
-```bash
+## Testing the Application
 
-# we have added swagger
-# click on try out and test end-points
+`Swagger UI`
 
-http://localhost:8080/swagger-ui.html
+> To test the application endpoints, visit:
 
+`Swagger UI`
 
+## H2 Database Console
 
+> Open the H2 console at:
 
-# Open the H2 console at
+`H2 Console`
 
-http://localhost:8080/h2-console
+> Credentials:
 
-# Credentials
+**Driver Class**: org.h2.Driver
+**JDBC URL**: jdbc:h2:file:./data/demo-db
+**User Name**: sa
+**Password**: password
 
-Driver Class: org.h2.Driver
-JDBC URL: jdbc:h2:file:./data/demo-db
-User Name: sa
-Password: password
+## Running SQL Commands
 
-# run sql commands in http://localhost:8080/h2-console
+> You can run SQL commands in the H2 console, such as:
+
+```sql
 
 SHOW TABLES;
 SELECT * FROM STUDENT;
