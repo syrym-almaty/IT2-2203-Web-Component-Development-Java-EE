@@ -131,11 +131,23 @@ git merge main
 
 > To test the application endpoints, visit:
 
+```curl
+
+http://localhost:8080/swagger-ui.html
+
+```
+
 `Swagger UI`
 
 ## H2 Database Console
 
 > Open the H2 console at:
+
+```curl
+
+http://localhost:8080/h2-console
+
+```
 
 `H2 Console`
 
