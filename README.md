@@ -102,14 +102,14 @@ SELECT * FROM STUDENT;
 
 git remote set-url origin git@github.com:syrym-almaty/IT2-2203-Web-Component-Development-Java-EE.git
 ```
-**> **Description****: Sets the remote repository URL for the origin remote to the specified GitHub repository.
+> **Description****: Sets the remote repository URL for the origin remote to the specified GitHub repository.
 
 ## 2. Checking Remote URLs
 ```bash
 
 git remote -v
 ```
-> **Description**: Displays the current remote URLs associated with the repository.
+ **Description**: Displays the current remote URLs associated with the repository.
 
 ## 3. Adding a Remote
 ```bash
