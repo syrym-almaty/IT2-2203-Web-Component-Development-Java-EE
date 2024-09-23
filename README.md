@@ -398,7 +398,7 @@ git config --global --list
 
 ## 2. Set Up Your User Information
 
-Configure your username and email (replace with demo credentials if needed):
+> Configure your username and email (replace with demo credentials if needed):
 
 ```bash
 
@@ -409,7 +409,7 @@ git config --global user.email "youremail@example.com"
 
 ## 3. Generate SSH Key
 
-Generate an SSH key for authentication:
+> Generate an SSH key for authentication:
 
 ```bash
 
@@ -421,7 +421,7 @@ Use a secure passphrase when prompted.
 
 ## 4. Start the SSH Agent
 
-Run the SSH agent in the background:
+> Run the SSH agent in the background:
 
 ```bash
 
@@ -431,7 +431,7 @@ eval "$(ssh-agent -s)"
 
 ## 5. Add Your SSH Key
 
-Add your SSH private key to the SSH agent:
+> Add your SSH private key to the SSH agent:
 
 ```bash
 
@@ -441,7 +441,7 @@ ssh-add ~/.ssh/id_ed25519
 
 ## 6. Verify the SSH Key
 
-List the keys added to the SSH agent:
+> List the keys added to the SSH agent:
 
 ```bash
 
@@ -451,7 +451,7 @@ ssh-add -l
 
 ## 7. Copy Your Public Key
 
-Copy your SSH public key to add it to GitHub:
+> Copy your SSH public key to add it to GitHub:
 
 ```bash
 
@@ -461,7 +461,7 @@ cat ~/.ssh/id_ed25519.pub
 
 Then visit GitHub SSH Keys to add it.
 
-Alternatively, you can copy it directly to the clipboard:
+> Alternatively, you can copy it directly to the clipboard:
 
 ```bash
 
@@ -471,7 +471,7 @@ clip < ~/.ssh/id_ed25519.pub
 
 ## 8. test SSH Connection
 
-test your SSH connection to GitHub:
+> test your SSH connection to GitHub:
 
 ```bash
 
@@ -483,7 +483,7 @@ You should see a message indicating successful authentication.
 
 ## 9. Set Remote Repository URL
 
-If you encounter issues pushing data, set the remote URL:
+> If you encounter issues pushing data, set the remote URL:
 
 ```bash
 
@@ -493,7 +493,7 @@ git remote set-url origin git@github.com:yourusername/your-repository.git
 
 ## 10. Push and Pull Changes
 
-Push your changes to the remote repository:
+> Push your changes to the remote repository:
 
 ```bash
 
@@ -501,7 +501,7 @@ git push --set-upstream origin master
 
 ```
 
-You can also push changes to specific branches:
+> You can also push changes to specific branches:
 
 ```bash
 
@@ -509,7 +509,7 @@ git push origin test
 
 ```
 
-To pull updates from the remote repository:
+> To pull updates from the remote repository:
 
 ```bash
 
@@ -517,7 +517,7 @@ git pull origin test
 
 ```
 
-If necessary, force push to a branch:
+> If necessary, force push to a branch:
 
 ```bash
 
@@ -526,9 +526,9 @@ git push --force origin test
 ```
 
 Creating a Repository from the Terminal
-To create a new GitHub repository directly from your terminal, follow these steps:
+> To create a new GitHub repository directly from your terminal, follow these steps:
 
-Navigate to your project directory:
+> Navigate to your project directory:
 
 ```bash
 
@@ -536,7 +536,7 @@ cd /path/to/your/project
 
 ```
 
-Initialize a new Git repository:
+> Initialize a new Git repository:
 
 ```bash
 
@@ -544,7 +544,7 @@ git init
 
 ```
 
-Stage and commit your files:
+> Stage and commit your files:
 
 ```bash
 
@@ -553,7 +553,7 @@ git commit -m "Initial commit"
 
 ```
 
-Add the remote repository:
+> Add the remote repository:
 
 ```bash
 
@@ -561,7 +561,7 @@ git remote add origin git@github.com:yourusername/your-repository.git
 
 ```
 
-Push to the remote repository:
+> Push to the remote repository:
 
 ```bash
 
@@ -572,7 +572,7 @@ git push -u origin master
 The -u flag sets the upstream tracking for future pushes and pulls.
 
 Using GitHub CLI on Ubuntu 20
-To manage GitHub repositories easily, install the GitHub CLI:
+> To manage GitHub repositories easily, install the GitHub CLI:
 
 ```bash
 
@@ -597,7 +597,7 @@ gh repo list
 ```
 
 Automate Your Bash Configuration
-You can automate your .bashrc file to streamline your workflow. Open the file for editing:
+> You can automate your .bashrc file to streamline your workflow. Open the file for editing:
 
 ```bash
 
@@ -606,15 +606,15 @@ nano ~/.bashrc
 ```
 
 Add Configuration
-Add the following lines to your .bashrc file:
+> Add the following lines to your .bashrc file:
 
 ```bash
 
 # Add your scripts directory to the PATH
-export PATH=$PATH:/c/Users/syrym/scripts
+export PATH=$PATH:/c/Users/yourName/scripts
 
 # Alias for creating GitHub repositories easily
-alias create-repo='python /c/Users/syrym/scripts/create_repo.py'
+alias create-repo='python /c/Users/yourName/scripts/create_repo.py'
 
 # Aliases for listing repositories
 alias listreposhttps='curl -H "Authorization: token YOUR_PAT" https://api.github.com/user/repos?per_page=100 | jq -r ".[].clone_url"'
@@ -627,7 +627,7 @@ alias editbash='nano ~/.bashrc && source ~/.bashrc'
 ```
 
 Reload Your Configuration
-After saving changes, reload your .bashrc file:
+> After saving changes, reload your .bashrc file:
 
 ```bash
 
