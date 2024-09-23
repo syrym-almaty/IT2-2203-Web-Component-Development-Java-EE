@@ -96,147 +96,146 @@ SHOW TABLES;
 SELECT * FROM STUDENT;
 ```
 
+## 1. Setting Remote URL
+
 ```bash
-# Switch to an existing branch:
 
+git remote set-url origin git@github.com:syrym-almaty/IT2-2203-Web-Component-Development-Java-EE.git
+```
+**> **Description****: Sets the remote repository URL for the origin remote to the specified GitHub repository.
 
-git checkout <branch_name>
+## 2. Checking Remote URLs
+```bash
 
-git switch <branch_name>
+git remote -v
+```
+> **Description**: Displays the current remote URLs associated with the repository.
+
+## 3. Adding a Remote
+```bash
+
+git remote add origin git@github.com:syrym-almaty/IT2-2203-Web-Component-Development-Java-EE.git
+```
+> **Description**: Adds a new remote named origin pointing to the specified GitHub repository.
+
+## 4. Switching Branches
+```bash
 
 git checkout main
+```
+> **Description**: Switches to the main branch in your local repository.
 
+## 5. Staging Changes
+```bash
 
-# Create and switch to a new branch:
+git add .
+```
+> **Description**: Stages all changes in the current directory for the next commit.
 
+## 6. Committing Changes
+```bash
 
-git checkout -b <new_branch_name>
+git commit -m "Your commit message here"
+```
+> **Description**: Commits the staged changes with a descriptive message.
 
-git switch -c <new_branch_name>
+## 7. Force Pushing Changes
+```bash
 
-git checkout -b feature/new-feature
+git push origin main --force
+```
+> **Description**: Forcefully pushes your local changes to the main branch on the remote repository, overwriting any existing changes.
 
+## 8. Pushing with Safety
+```bash
 
-# AFTER GIT PULL COMMAND merge conflicts how to solve them
+git push origin main --force-with-lease
+```
+> **Description**: Forcefully pushes your local changes while ensuring that the remote branch hasn’t been updated since your last pull.
+
+## 9. Fetching Remote Changes
+```bash
+
+git fetch origin
+```
+> **Description**: Fetches the latest changes from the remote repository without merging them into your local branch.
+
+## 10. Hard Resetting
+```bash
+
+git reset --hard HEAD
+```
+> **Description**: Resets your current branch to the last commit, discarding any changes in the working directory.
+
+## 11. Creating a New Branch
+```bash
+git checkout -b my-feature-branch
+```
+> **Description**: Creates a new branch named my-feature-branch and switches to it.
+
+## 12. Pushing a New Branch
+```bash
+
+git push origin my-feature-branch
+```
+> **Description**: Pushes the newly created branch to the remote repository.
+
+## 13. Merging Changes
+```bash
+
+git merge main
+```
+> **Description**: Merges changes from the main branch into your current branch.
+
+## 14. Viewing Commit History
+```bash
+
+git log
+```
+> **Description**: Displays the commit history for the current branch.
+
+## 15. Resolving Merge Conflicts
+```bash
+
 <<<<<<< HEAD
 // Your local changes
 =======
- // Changes from the main branch
+// Changes from the main branch
 >>>>>>> main
 ```
+> **Description**: Markers used to indicate merge conflicts in the code; manual resolution is required.
 
+## 16. Using a Merge Tool
 ```bash
-
-# Rebasing Instead of Merging
-
-## Step 1: Ensure you're on your local branch (e.g., feature/new-feature):
-
-git checkout feature/new-feature
-
-## Step 2: Fetch the latest changes from the main branch:
-
-git fetch origin
-
-## Step 3: Rebase your branch onto the latest main:
-
-git rebase origin/main
-
-## Step 4: If there are conflicts, Git will pause and let you resolve them manually. After resolving them, use:
-
-git add <conflicted_file>
-git rebase --continue
-
-## Step 5: Once the rebase is done, push your changes:
-
-git push --force-with-lease
-
-```
-```bash
-# Resolve Conflicts Without Manual Deletion
-
-## Use a Merge Tool
-
-### Launch a merge tool:
 
 git mergetool
-
-## Automatic Conflict Resolution with ours or theirs
-
-### Use ours strategy (to keep your local changes):
-
-git merge -X ours main
-
-### Use theirs strategy (to keep the changes from main):
-
-git merge -X theirs main
-
-# Best Practices to Avoid Future Merge Conflicts
-
-## Pull Frequently from Main
-
-git checkout main
-git pull origin main
-git checkout feature/new-feature
-git merge main
-
-# Make Smaller, Isolated Changes
-
-## Keeping your changes small and isolated to specific parts of the codebase helps reduce conflicts, as the more you modify the same areas, the higher the chance of conflicts.
-
-# Communicate with the Team
-
-## If you and your team are working on the same files, communication is key. Avoid editing the same files simultaneously unless necessary.
-
-# Using git rerere (Reuse Recorded Resolutions)
-
-## Enable rerere:
-
-git config --global rerere.enabled true
-
-# When Merging Cannot Be Avoided
-
-## Git will mark the conflicting files with the conflict markers (<<<<<<, ======, >>>>>>).
-
-## You will need to resolve conflicts manually by choosing the correct version of the code.
-
-## After resolving the conflicts, you must:
-git add <conflicted_file>
-git commit
-
-# Key Commands:
-
-# Rebasing Workflow (Preferred):
-
-# Ensure you are on the feature branch
-git checkout feature/new-feature
-
-# Fetch the latest changes from the remote repository
-git fetch origin
-
-# Rebase your branch on top of main
-git rebase origin/main
-
-# Resolve any conflicts, then:
-git add <conflicted_file>
-git rebase --continue
-
-# Push the changes (with force to avoid conflicts)
-git push --force-with-lease
-
-
-# Merging Workflow (If Needed):
-# Ensure you are on the feature branch
-git checkout feature/new-feature
-
-# Pull changes from main and merge
-git pull origin main
-
-# Resolve any conflicts manually
-git add <conflicted_file>
-git commit
 ```
+> **Description**: Launches a configured merge tool to help resolve merge conflicts.
 
+## 17. Rebasing
 ```bash
-# Push the changes
-git push origin feature/new-feature
+
+git rebase origin/main
 ```
+> **Description**: Applies changes from your current branch on top of the latest changes from the main branch.
+
+## 18. Viewing Remote Branches
+```bash
+
+git branch -r
+```
+> **Description**: Lists all remote branches.
+
+## 19. Pulling Changes
+```bash
+
+git pull origin main
+```
+> **Description**: Fetches and merges changes from the main branch of the remote repository into your current branch.
+
+## 20. Updating a Local Branch
+```bash
+
+git pull --rebase
+```
+> **Description**: Fetches changes from the remote branch and applies your local commits on top of the fetched commits.
