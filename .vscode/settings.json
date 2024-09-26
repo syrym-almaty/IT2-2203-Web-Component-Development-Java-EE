@@ -1,4 +1,9 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
+<<<<<<< HEAD
     "java.configuration.updateBuildConfiguration": "interactive"
+=======
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "window.autoDetectColorScheme": true
+>>>>>>> 3c31e1ea2f5bb29f25ca6704fdbf5883a3ad4d6e
 }
