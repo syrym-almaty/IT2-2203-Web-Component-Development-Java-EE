@@ -35,7 +35,7 @@ public class DemoController {
 
     @Operation(summary = "Create User", description = "Creates a new user by accepting a JSON body with name and email.")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "User created successfully",
+            @ApiResponse(responseCode = "201", description = "User created successfully",
                     content = { @Content(mediaType = "application/json",
                             schema = @Schema(implementation = User.class)) }),
             @ApiResponse(responseCode = "400", description = "Invalid input data")
@@ -58,6 +58,7 @@ class Greeting {
         this.note = note;
     }
 
+    // Getters and Setters
     public String getMessage() {
         return message;
     }
@@ -87,6 +88,7 @@ class User {
         this.email = email;
     }
 
+    // Getters and Setters
     public String getName() {
         return name;
     }
@@ -95,7 +97,7 @@ class User {
         this.name = name;
     }
 
-    public String getEmail() {
+	public String getEmail() {
         return email;
     }
 
