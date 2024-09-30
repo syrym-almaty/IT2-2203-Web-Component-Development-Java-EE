@@ -2,7 +2,7 @@
 
 ---
 
-## Welcome to the IT2-2206 Web Component Development project! Follow the instructions below to clone the repository, set up your environment, and start developing
+## Welcome to the IT2-2203 Web Component Development project! Follow the instructions below to clone the repository, set up your environment, and start developing
 
 ---
 
@@ -12,7 +12,7 @@
 
 ```bash
 
-git clone git@github.com:syrym-almaty/IT2-2206-Web-Component-Development-Java-EE.git
+git clone git@github.com:syrym-almaty/IT2-2203-Web-Component-Development-Java-EE.git
 ```
 
 ## Navigate into the project directory
