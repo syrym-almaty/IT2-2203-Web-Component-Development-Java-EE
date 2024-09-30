@@ -19,7 +19,7 @@ git clone git@github.com:syrym-almaty/IT2-2203-Web-Component-Development-Java-EE
 
 ```bash
 
-cd IT2-2206-Web-Component-Development-Java-EE
+cd IT2-2203-Web-Component-Development-Java-EE
 ```
 
 > Build and Run the Application
@@ -172,7 +172,7 @@ SELECT * FROM STUDENT;
 
 ```bash
 
-git remote set-url origin git@github.com:syrym-almaty/IT2-2206-Web-Component-Development-Java-EE.git
+git remote set-url origin git@github.com:syrym-almaty/IT2-2203-Web-Component-Development-Java-EE.git
 
 ```
 
@@ -192,7 +192,7 @@ git remote -v
 
 ```bash
 
-git remote add origin git@github.com:syrym-almaty/IT2-2206-Web-Component-Development-Java-EE.git
+git remote add origin git@github.com:syrym-almaty/IT2-2203-Web-Component-Development-Java-EE.git
 
 ```
 
