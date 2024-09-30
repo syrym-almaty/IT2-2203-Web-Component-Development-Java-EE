@@ -5,7 +5,12 @@
 ## rebase
 ```bash
 
+// get more information in google before using it
 git rebase -Xtheirs origin/main
+
+// get more information in google before using it
+git rebase -Xours origin/main
+
 
 ```
 
