@@ -2,6 +2,16 @@
 
 ---
 
+## rebase
+```bash
+
+git rebase -Xtheirs origin/main
+
+```
+
+---
+
+
 ## Welcome to the IT2-2203 Web Component Development project! Follow the instructions below to clone the repository, set up your environment, and start developing
 
 ---
