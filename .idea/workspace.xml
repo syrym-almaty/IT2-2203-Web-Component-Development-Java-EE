@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="" />
+    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/src/main/java/com/example/demo/Controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/src/main/java/com/example/demo/Controller/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/src/main/java/com/example/demo/controller/NailController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/classes/com/example/demo/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/classes/com/example/demo/controller/NailController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +36,7 @@
         <entry key="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -32,6 +51,14 @@
     &quot;accountId&quot;: &quot;e3e66a61-7536-49b0-bd90-058dff0203fc&quot;
   }
 }</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="C:\Program Files\apache-maven-3.9.9-bin\apache-maven-3.9.9" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -43,20 +70,51 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.demo: Compose Deployment.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Maven.demo [clean,install].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "feature/update-student-rassul",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Расул/IdeaProjects/task1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.build",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="IT2-2203-Web-Component-Development-Java-EE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="IT2-2203-Web-Component-Development-Java-EE" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -76,7 +134,14 @@
       <workItem from="1727606330800" duration="1563000" />
       <workItem from="1727865354222" duration="491000" />
       <workItem from="1727866008933" duration="10000" />
-      <workItem from="1727866263344" duration="2159000" />
+      <workItem from="1727866263344" duration="4378000" />
+      <workItem from="1727871400864" duration="135000" />
+      <workItem from="1727871544889" duration="51000" />
+      <workItem from="1727871603448" duration="72000" />
+      <workItem from="1727871683529" duration="39000" />
+      <workItem from="1727957952044" duration="35000" />
+      <workItem from="1728218995307" duration="427000" />
+      <workItem from="1728219441389" duration="764000" />
     </task>
     <servers />
   </component>
