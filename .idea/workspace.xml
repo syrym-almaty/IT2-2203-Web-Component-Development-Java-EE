@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/src/main/java/com/example/demo/Controller/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/src/main/java/com/example/demo/Controller/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/src/main/java/com/example/demo/controller/NailController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/classes/com/example/demo/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/classes/com/example/demo/controller/NailController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE/demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/DemoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/controller/DemoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/controller/Greeting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/controller/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/controller/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/entity/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/repository/StudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +66,7 @@
     "Docker.demo: Compose Deployment.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Maven.demo [clean,install].executor": "Run",
+    "Maven.demo [install].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -80,7 +74,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "feature/update-student-rassul",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Расул/IdeaProjects/task1",
+    "last_opened_file_path": "C:/Users/Расул/IdeaProjects/untitled5/IT2-2203-Web-Component-Development-Java-EE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -142,6 +136,7 @@
       <workItem from="1727957952044" duration="35000" />
       <workItem from="1728218995307" duration="427000" />
       <workItem from="1728219441389" duration="764000" />
+      <workItem from="1728226361611" duration="355000" />
     </task>
     <servers />
   </component>
@@ -158,5 +153,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Resolved merge conflicts by taking changes from origin/student-rasul" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
