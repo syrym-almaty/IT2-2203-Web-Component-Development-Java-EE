@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-<<<<<<< HEAD
-    <mapping directory="$PROJECT_DIR$/IT2-2203-Web-Component-Development-Java-EE" vcs="Git" />
-=======
->>>>>>> origin/student-rasul
   </component>
 </project>

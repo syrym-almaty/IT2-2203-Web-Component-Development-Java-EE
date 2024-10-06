@@ -36,7 +36,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<<<<<<< HEAD
 				<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -44,14 +43,11 @@
 			<version>6.1.12</version>
 		</dependency>
 
-=======
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 		</dependency>
 
-
->>>>>>> origin/student-rasul
 		<!-- Spring Data JPA for Database Interaction -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -86,10 +82,6 @@
 			<version>2.1.0</version>
 		</dependency>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/student-rasul
 	</dependencies>
 
 	<build>
