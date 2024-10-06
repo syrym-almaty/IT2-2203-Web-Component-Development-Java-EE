@@ -1,6 +1,7 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "java.configuration.updateBuildConfiguration": "interactive"
 =======
 <<<<<<< HEAD
@@ -10,4 +11,7 @@
     "window.autoDetectColorScheme": true
 >>>>>>> 3c31e1ea2f5bb29f25ca6704fdbf5883a3ad4d6e
 >>>>>>> bb4b9d4740cbc49cdbd9e59b2a870c21e1e1ae9c
+=======
+    "java.configuration.updateBuildConfiguration": "interactive"
+>>>>>>> origin/student-rasul
 }

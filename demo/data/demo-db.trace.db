@@ -110,6 +110,7 @@ Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
 	... 50 more
+<<<<<<< HEAD
 2024-09-26 08:46:26.476885+05:00 database: wrong user or password; user: "SA"
 org.h2.message.DbException: Wrong user name or password [28000-224]
 	at org.h2.message.DbException.get(DbException.java:223)
@@ -166,3 +167,5 @@ Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
 	... 50 more
+=======
+>>>>>>> origin/student-rasul
