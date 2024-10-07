@@ -46,12 +46,12 @@ public class StudentController {
     }
 
     @GetMapping("/{id}")
-    public Student getStudentById(@PathVariable Long id) {
+    public Student getStudentById(@PathVariable UUID id) {
         return studentService.getStudentById(id);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteStudent(@PathVariable Long id) {
+    public void deleteStudent(@PathVariable UUID id) {
         studentService.deleteStudent(id);
     }
 }

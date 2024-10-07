@@ -12,7 +12,7 @@ import java.util.UUID;
 public class Student {
 
     @Id
-    @GeneratedValue(generator = "UUID")
+    @GeneratedValue(generator = "uuid")
     @GenericGenerator(
             name = "UUID",
             strategy = "org.hibernate.id.UUIDGenerator"
