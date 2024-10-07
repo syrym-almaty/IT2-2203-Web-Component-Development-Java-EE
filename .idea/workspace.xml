@@ -4,22 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="adding changing Long to UUID">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="resolving DB problems">
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/resources/application-test.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/test-classes/application-test.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -156,7 +156,7 @@
       <workItem from="1728226361611" duration="3527000" />
       <workItem from="1728233588781" duration="10601000" />
       <workItem from="1728245426498" duration="603000" />
-      <workItem from="1728271679825" duration="671000" />
+      <workItem from="1728271679825" duration="3219000" />
     </task>
     <task id="LOCAL-00001" summary="Adding postgres DB">
       <option name="closed" value="true" />
@@ -182,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728271776102</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changing DB to H2">
+      <option name="closed" value="true" />
+      <created>1728272467756</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728272467756</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +212,9 @@
     <MESSAGE value="deleting merge conflicts from misc.xml" />
     <MESSAGE value="Adding postgres DB" />
     <MESSAGE value="adding changing Long to UUID" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding changing Long to UUID" />
+    <MESSAGE value="changing DB to H2" />
+    <MESSAGE value="resolving DB problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="resolving DB problems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
