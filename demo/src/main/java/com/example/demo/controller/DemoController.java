@@ -1,5 +1,5 @@
 package com.example.demo.controller;
-
+// это было сложно разабраться с версей и их по путать
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
