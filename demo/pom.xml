@@ -34,7 +34,8 @@
 		<!-- Spring Boot Web Starter -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
+			<version>3.3.3</version> <!-- Замените на актуальную версию -->
 		</dependency>
 				<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
 		<dependency>
@@ -42,6 +43,13 @@
 			<artifactId>spring-web</artifactId>
 			<version>6.1.12</version>
 		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
 
 		<!-- Spring Data JPA for Database Interaction -->
 		<dependency>
@@ -79,22 +87,19 @@
 
 	</dependencies>
 
+
 	<build>
 		<plugins>
-			<!-- Spring Boot Maven Plugin -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-
-			<!-- Exclude Surefire plugin to skip tests -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
-					<skipTests>true</skipTests>
+					<mainClass>com.example.demo.DemoApplication</mainClass> <!-- замените на ваш путь -->
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
+
+
 </project>
