@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/DemoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/controller/DemoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/controller/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/controller/StudentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/controller/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/entity/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/repository/StudentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/demo/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="adding changing Long to UUID">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/resources/application-test.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/test-classes/application-test.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +69,13 @@
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DemoApplication.executor": "Run",
     "git-widget-placeholder": "feature/update-student-rassul",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Расул/IdeaProjects/untitled5/IT2-2203-Web-Component-Development-Java-EE",
@@ -83,10 +87,23 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Расул\IdeaProjects\untitled5\IT2-2203-Web-Component-Development-Java-EE\demo\src\main\resources" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.demo.repository" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="IT2-2203-Web-Component-Development-Java-EE" />
@@ -136,8 +153,36 @@
       <workItem from="1727957952044" duration="35000" />
       <workItem from="1728218995307" duration="427000" />
       <workItem from="1728219441389" duration="764000" />
-      <workItem from="1728226361611" duration="355000" />
+      <workItem from="1728226361611" duration="3527000" />
+      <workItem from="1728233588781" duration="10601000" />
+      <workItem from="1728245426498" duration="603000" />
+      <workItem from="1728271679825" duration="671000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding postgres DB">
+      <option name="closed" value="true" />
+      <created>1728244312118</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728244312118</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding postgres DB">
+      <option name="closed" value="true" />
+      <created>1728244332733</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728244332733</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding changing Long to UUID">
+      <option name="closed" value="true" />
+      <created>1728271776102</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728271776102</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +201,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Resolved merge conflicts by taking changes from origin/student-rasul" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="deleting merge conflicts from misc.xml" />
+    <MESSAGE value="Adding postgres DB" />
+    <MESSAGE value="adding changing Long to UUID" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding changing Long to UUID" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.HibernateException" package="org.hibernate" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
