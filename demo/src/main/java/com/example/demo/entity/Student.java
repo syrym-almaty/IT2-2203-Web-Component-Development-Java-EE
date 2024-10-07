@@ -13,8 +13,8 @@ public class Student {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(
-            name = "UUID",
-            strategy = "org.hibernate.id.UUIDGenerator"
+        name = "UUID",
+        strategy = "org.hibernate.id.UUIDGenerator"
     )
     @Column(columnDefinition = "uuid")
     private UUID id;
@@ -47,7 +47,7 @@ public class Student {
         this.name = name;
     }
 
-    public String getEmail() {
+	public String getEmail() {
         return email;
     }
 
