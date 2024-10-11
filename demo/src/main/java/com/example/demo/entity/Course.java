@@ -26,6 +26,13 @@ public class Course {
     @Column(unique = true)
     private String code;
 
-    @ManyToMany(mappedBy = "courses")
+    @ManyToMany
+    @JoinTable(
+            name = "enrollments",
+            joinColumns = @JoinColumn(name = "student_id"),
+            inverseJoinColumns = @JoinColumn(name = "course_id")
+    )
     private Set<Student> students = new HashSet<>();
+
+    private int credits;
 }

@@ -37,5 +37,4 @@ public class Student {
 
     // GPA field
     private Double gpa;
-
 }
