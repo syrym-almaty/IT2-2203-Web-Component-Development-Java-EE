@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment=" Created Course Entity and joined ManyToMany to Students using lombok">
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Grade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/GradeId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/repository/CourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="demo-db changes">
       <change beforePath="$PROJECT_DIR$/data/demo-db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo-db.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/demo-db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo-db.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +160,7 @@
       <workItem from="1728271679825" duration="7142000" />
       <workItem from="1728564343195" duration="694000" />
       <workItem from="1728565212846" duration="1221000" />
+      <workItem from="1728621835053" duration="445000" />
     </task>
     <task id="LOCAL-00001" summary="Adding postgres DB">
       <option name="closed" value="true" />
@@ -203,7 +202,47 @@
       <option name="project" value="LOCAL" />
       <updated>1728287121041</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lombok methods get and set">
+      <option name="closed" value="true" />
+      <created>1728621910990</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728621910990</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding class Grade for Entity joining on Student class">
+      <option name="closed" value="true" />
+      <created>1728622032240</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728622032240</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Grade Id Lombok class">
+      <option name="closed" value="true" />
+      <created>1728622073068</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728622073068</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Course Repository JPA add">
+      <option name="closed" value="true" />
+      <created>1728622136616</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728622136616</updated>
+    </task>
+    <task id="LOCAL-00010" summary="demo-db changes">
+      <option name="closed" value="true" />
+      <created>1728622149600</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728622149600</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +268,12 @@
     <MESSAGE value="Added package and classes of Exceptions" />
     <MESSAGE value="resolving DB problems" />
     <MESSAGE value=" Created Course Entity and joined ManyToMany to Students using lombok" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Created Course Entity and joined ManyToMany to Students using lombok" />
+    <MESSAGE value="Lombok methods get and set" />
+    <MESSAGE value="adding class Grade for Entity joining on Student class" />
+    <MESSAGE value="Grade Id Lombok class" />
+    <MESSAGE value="Course Repository JPA add" />
+    <MESSAGE value="demo-db changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo-db changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
