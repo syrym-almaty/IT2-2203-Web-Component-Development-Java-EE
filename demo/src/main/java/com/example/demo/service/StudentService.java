@@ -36,7 +36,7 @@ public class StudentService {
                 .map(student -> {
                     student.setName(updatedStudent.getName());
                     student.setEmail(updatedStudent.getEmail());
-                    // Add other fields as necessary
+
                     return studentRepository.save(student);
                 })
                 .orElseThrow(() -> new ResourceNotFoundException("Student not found with id " + id));
