@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="resolving DB problems">
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Course.java" afterDir="false" />
+    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment=" Created Course Entity and joined ManyToMany to Students using lombok">
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/GradeId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/repository/CourseRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/demo-db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo-db.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/demo-db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo-db.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,42 +63,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.demo: Compose Deployment.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Maven.demo [clean,install].executor": "Run",
-    "Maven.demo [install].executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DemoApplication.executor": "Run",
-    "git-widget-placeholder": "feature/update-student-rassul",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Расул/IdeaProjects/untitled5/IT2-2203-Web-Component-Development-Java-EE",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.demo: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Maven.demo [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [install].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/update-student-rassul&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Расул/IdeaProjects/untitled5/IT2-2203-Web-Component-Development-Java-EE&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Расул\IdeaProjects\untitled5\IT2-2203-Web-Component-Development-Java-EE\demo\src\main\resources" />
@@ -156,7 +159,9 @@
       <workItem from="1728226361611" duration="3527000" />
       <workItem from="1728233588781" duration="10601000" />
       <workItem from="1728245426498" duration="603000" />
-      <workItem from="1728271679825" duration="3219000" />
+      <workItem from="1728271679825" duration="7142000" />
+      <workItem from="1728564343195" duration="694000" />
+      <workItem from="1728565212846" duration="1221000" />
     </task>
     <task id="LOCAL-00001" summary="Adding postgres DB">
       <option name="closed" value="true" />
@@ -190,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728272467756</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=" Created Course Entity and joined ManyToMany to Students using lombok">
+      <option name="closed" value="true" />
+      <created>1728287121041</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728287121041</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,8 +226,10 @@
     <MESSAGE value="Adding postgres DB" />
     <MESSAGE value="adding changing Long to UUID" />
     <MESSAGE value="changing DB to H2" />
+    <MESSAGE value="Added package and classes of Exceptions" />
     <MESSAGE value="resolving DB problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolving DB problems" />
+    <MESSAGE value=" Created Course Entity and joined ManyToMany to Students using lombok" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Created Course Entity and joined ManyToMany to Students using lombok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
