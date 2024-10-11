@@ -2,6 +2,8 @@ package com.example.demo.entity;
 
 import jakarta.persistence.*;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.HashSet;
@@ -11,6 +13,9 @@ import java.util.UUID;
 @Entity
 public class Student {
 
+    // Getters and Setters
+    @Setter
+    @Getter
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(
@@ -21,7 +26,11 @@ public class Student {
     @Column(columnDefinition = "uuid")
     private UUID id;
 
+    @Setter
+    @Getter
     private String name;
+    @Setter
+    @Getter
     private String email;
 
     // Constructors
@@ -32,30 +41,6 @@ public class Student {
         this.name = name;
         this.email = email;
     }
-
-    // Getters and Setters
-    public UUID getId() {
-        return id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail () {
-            return email;
-        }
-    public void setEmail (String email){
-            this.email = email;
-        }
 
 
     @ManyToMany
