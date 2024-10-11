@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.beans.MutablePropertyValues;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -43,6 +44,7 @@ public class Student {
     }
 
 
+    @Getter
     @ManyToMany
     @JoinTable(
             name = "enrollments",
@@ -53,5 +55,6 @@ public class Student {
 
     // GPA field
     private Double gpa;
+
 }
 
