@@ -1,5 +1,7 @@
 package com.example.demo.entity;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
 import lombok.AllArgsConstructor;
@@ -26,6 +28,12 @@ public class Course {
     @NotBlank(message = "Course code is required")
     @Column(unique = true)
     private String code;
+
+    @NotBlank(message = "Course credit is required")
+    @Min(value = 2, message = "Course credits must be at least 2")
+    @Max(value = 6, message = "Course credits must not exceed 6")
+    private int credits;
+
 
     @ManyToMany(mappedBy = "courses")
     private Set<Student> students = new HashSet<>();
