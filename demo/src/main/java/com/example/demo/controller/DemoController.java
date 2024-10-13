@@ -53,3 +53,16 @@ public class DemoController {
         return new ResponseEntity<>(student, HttpStatus.OK);
     }
 }
+
+class ME{
+    private String me;
+    private String others;
+
+    public ME(String me,String others){
+        this.me = me;
+        this.others = others;
+    }
+
+    public String getMe(){return me;}
+}
+
