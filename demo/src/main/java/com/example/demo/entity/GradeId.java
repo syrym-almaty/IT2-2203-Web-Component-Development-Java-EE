@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class GradeId implements Serializable {
+public class    GradeId implements Serializable {
     private Long studentId;
     private Long courseId;
 }
