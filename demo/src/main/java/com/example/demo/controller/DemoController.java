@@ -114,5 +114,7 @@ class ME{
         this.me = me;
         this.others = others;
     }
+
+    public String getMe(){return me;}
 }
 
