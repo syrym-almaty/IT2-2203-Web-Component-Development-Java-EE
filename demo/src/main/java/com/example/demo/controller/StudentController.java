@@ -21,6 +21,33 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
+
+    @Operation(summary = "Update Student", description = "Update an existing student's information")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Student updated successfully"),
+            @ApiResponse(responseCode = "400", description = "Invalid input data"),
+            @ApiResponse(responseCode = "404", description = "Student not found")
+    })
+    @PutMapping("/{id}")
+    public Student updateStudent(
+            @Parameter(description = "UUID of the student to update", required = true)
+            @PathVariable UUID id,
+            @Parameter(description = "Updated student object", required = true)
+            @RequestBody Student updatedStudent) {
+        return studentService.updateStudent(id, updatedStudent);
+    }
+
+    @PatchMapping("/{id}")
+    public Student partialUpdateStudent(
+            @Parameter(description = "UUID of the student to update")
+            @PathVariable UUID id,
+            @Parameter(description = "Updated student object")
+            @RequestBody Student updatedStudent) {
+
+        return studentService.partialUpdateStudent(id, updatedStudent);
+    }
+
+
     @Operation(summary = "Get All Students", description = "Retrieve a list of all students")
     @ApiResponse(responseCode = "200", description = "Successfully retrieved list")
     @GetMapping
