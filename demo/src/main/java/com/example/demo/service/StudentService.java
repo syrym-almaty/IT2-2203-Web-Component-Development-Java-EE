@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import com.example.demo.entity.Student;
+import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,10 +24,24 @@ public class StudentService {
     }
 
     public Student getStudentById(UUID id) {
-        return studentRepository.findById(id).orElse(null);
+        return studentRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Student not found with id " + id));
     }
 
     public void deleteStudent(UUID id) {
+        if (!studentRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Student not found with id " + id);
+        }
         studentRepository.deleteById(id);
+    }
+
+    public Student updateStudent(UUID id, Student updatedStudent) {
+        return studentRepository.findById(id)
+                .map(student -> {
+                    student.setName(updatedStudent.getName());
+                    student.setEmail(updatedStudent.getEmail());
+                    return studentRepository.save(student);
+                })
+                .orElseThrow(() -> new ResourceNotFoundException("Student not found with id " + id));
     }
 }
