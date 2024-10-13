@@ -105,3 +105,14 @@ class User {
         this.email = email;
     }
 }
+
+class ME{
+    private String me;
+    private String others;
+
+    public ME(String me,String others){
+        this.me = me;
+        this.others = others;
+    }
+}
+
