@@ -4,9 +4,7 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.HashSet;
@@ -29,6 +27,8 @@ public class Course {
     @Column(unique = true)
     private String code;
 
+    @Getter
+    @Setter
     @NotBlank(message = "Course credit is required")
     @Min(value = 2, message = "Course credits must be at least 2")
     @Max(value = 6, message = "Course credits must not exceed 6")
