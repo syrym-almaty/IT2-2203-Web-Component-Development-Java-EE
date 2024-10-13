@@ -52,4 +52,24 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Entity
+    @Table(name = "students")
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public class Student {
+        // Existing fields...
+
+        @ManyToMany
+        @JoinTable(
+                name = "enrollments",
+                joinColumns = @JoinColumn(name = "student_id"),
+                inverseJoinColumns = @JoinColumn(name = "course_id")
+        )
+        private Set<Course> courses = new HashSet<>();
+
+        // GPA field
+        private Double gpa;
+    }
 }
