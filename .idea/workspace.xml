@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="demo-db changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/CourseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/EnrollmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/EnrollmentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +159,7 @@
       <workItem from="1728564343195" duration="694000" />
       <workItem from="1728565212846" duration="1221000" />
       <workItem from="1728621835053" duration="445000" />
-      <workItem from="1728807088754" duration="1483000" />
+      <workItem from="1728807088754" duration="2209000" />
     </task>
     <task id="LOCAL-00001" summary="Adding postgres DB">
       <option name="closed" value="true" />
