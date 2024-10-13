@@ -1,11 +1,13 @@
 package com.example.demo.entity;
 
+import com.example.demo.repository.GradeRepository;
 import jakarta.persistence.*;
 
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.beans.MutablePropertyValues;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -52,9 +54,7 @@ public class Student {
             inverseJoinColumns = @JoinColumn(name = "course_id")
     )
     private Set<Course> courses = new HashSet<>();
-
     // GPA field
     private Double gpa;
-
 }
 
