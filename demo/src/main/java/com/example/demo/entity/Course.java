@@ -1,2 +1,4 @@
-package com.example.demo.entity;public class Course {
+package com.example.demo.entity;
+
+public class Course {
 }
