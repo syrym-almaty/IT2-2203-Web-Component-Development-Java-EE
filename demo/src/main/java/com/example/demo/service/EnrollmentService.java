@@ -11,31 +11,29 @@ import java.util.UUID;
 
 @Service
 public class EnrollmentService {
-    @Autowired
-    private StudentRepository studentRepository;
-
-    @Autowired
-    private CourseRepository courseRepository;
+   @Autowired
+   CourseService courseService;
 
     public void enrollStudentInCourse(UUID studentId, Long courseId) throws BusinessException {
-        Student student = studentRepository.findById(studentId)
-                .orElseThrow(() -> new ResourceNotFoundException("Student not found"));
+      if (courseService.isCourseValidData(courseId)){
+          if (courseService.isStudentValidData(studentId)){
+          Student student = courseService.getStudentRepository().getReferenceById(studentId);
+          Course course = courseService.getCourseRepository().getReferenceById(courseId);
 
-        Course course = courseRepository.findById(courseId)
-                .orElseThrow(() -> new ResourceNotFoundException("Course not found"));
+              student.getCourses().add(course);
+              course.getStudents().add(student);
 
-        if (student.getCourses().size() >= 5) {
-            throw new BusinessException("Student cannot enroll in more than 5 courses");
-        }
+              courseService.getStudentRepository().save(student);
+              courseService.getCourseRepository().save(course);
+          }
+          else {
+              throw new ResourceNotFoundException("The student not found or Courses more than 5");
+          }
+      }
+      else {
+          throw new ResourceNotFoundException("The course not found or Students more than 30 ");
+      }
 
-        if (course.getStudents().size() >= 30) {
-            throw new BusinessException("Course cannot have more than 30 students");
-        }
 
-        student.getCourses().add(course);
-        course.getStudents().add(student);
-
-        studentRepository.save(student);
-        courseRepository.save(course);
     }
 }

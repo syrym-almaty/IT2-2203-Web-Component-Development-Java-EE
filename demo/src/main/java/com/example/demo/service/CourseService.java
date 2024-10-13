@@ -2,6 +2,8 @@ package com.example.demo.service;
 
 import com.example.demo.repository.CourseRepository;
 import com.example.demo.repository.StudentRepository;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,9 +12,13 @@ import java.util.UUID;
 @Service
 public class CourseService {
     @Autowired
+    @Getter
+    @Setter
     private StudentRepository studentRepository;
 
     @Autowired
+    @Getter
+    @Setter
     private CourseRepository courseRepository;
 
     public boolean isStudentValidData(UUID id) {
@@ -22,7 +28,9 @@ public class CourseService {
     }
 
     public  boolean isCourseValidData(long uuid){
-return courseRepository.findById(uuid).map(course -> course.getStudents().size() < 30).orElse(false);
+return courseRepository.findById(uuid)
+        .map(course -> course.getStudents().size() < 30) // true If students fewer than 30
+        .orElse(false); // false if Courses not found
     }
 }
 
