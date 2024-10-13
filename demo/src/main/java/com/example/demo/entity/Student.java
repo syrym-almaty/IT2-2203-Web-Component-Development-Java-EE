@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import org.hibernate.annotations.GenericGenerator;
+
 import java.util.UUID;
 
 @Entity
@@ -12,15 +13,14 @@ public class Student {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(
-        name = "UUID",
-        strategy = "org.hibernate.id.UUIDGenerator"
+            name = "UUID",
+            strategy = "org.hibernate.id.UUIDGenerator"
     )
     private UUID id;
 
     private String name;
     private String email;
 
-    // Constructors
     public Student() {}
 
     public Student(String name, String email) {
@@ -28,7 +28,6 @@ public class Student {
         this.email = email;
     }
 
-    // Getters and Setters
     public UUID getId() {
         return id;
     }
