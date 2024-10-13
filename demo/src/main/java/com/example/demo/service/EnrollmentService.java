@@ -8,32 +8,31 @@ import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
-
 @Service
 public class EnrollmentService {
-   @Autowired
-   CourseService courseService;
+    @Autowired
+    CourseService courseService;
 
     public void enrollStudentInCourse(UUID studentId, Long courseId) throws BusinessException {
-      if (courseService.isCourseValidData(courseId)){
-          if (courseService.isStudentValidData(studentId)){
-          Student student = courseService.getStudentRepository().getReferenceById(studentId);
-          Course course = courseService.getCourseRepository().getReferenceById(courseId);
+        if (courseService.isCourseValidData(courseId)) {
+            if (courseService.isStudentValidData(studentId)) {
+                Student student = courseService.getStudentRepository()
+                        .findById(studentId)
+                        .orElseThrow(() -> new ResourceNotFoundException("Student not found"));
+                Course course = courseService.getCourseRepository()
+                        .findById(courseId)
+                        .orElseThrow(() -> new ResourceNotFoundException("Course not found"));
 
-              student.getCourses().add(course);
-              course.getStudents().add(student);
+                student.getCourses().add(course);
+                course.getStudents().add(student);
 
-              courseService.getStudentRepository().save(student);
-              courseService.getCourseRepository().save(course);
-          }
-          else {
-              throw new ResourceNotFoundException("The student not found or Courses more than 5");
-          }
-      }
-      else {
-          throw new ResourceNotFoundException("The course not found or Students more than 30 ");
-      }
-
-
+                courseService.getStudentRepository().save(student);
+                courseService.getCourseRepository().save(course);
+            } else {
+                throw new BusinessException("Student is enrolled in more than 5 courses.");
+            }
+        } else {
+            throw new BusinessException("Course has more than 30 students.");
+        }
     }
 }
