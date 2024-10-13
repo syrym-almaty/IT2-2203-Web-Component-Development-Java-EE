@@ -101,5 +101,3 @@ class User {
         this.email = email;
     }
 }
-public class DemoController {
-}
