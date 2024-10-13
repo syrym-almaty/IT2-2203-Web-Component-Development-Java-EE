@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo-db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo-db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo-db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo-db.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Student.java" afterDir="false" />
-    </list>
+    <list default="true" id="ca562536-1567-4605-93cd-b99d59b3998b" name="Changes" comment="..." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +77,7 @@
     "Spring Boot.DemoApplication.executor": "Run",
     "git-widget-placeholder": "feature/update-student-rassul",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Расул/IdeaProjects/untitled4",
+    "last_opened_file_path": "C:/Users/Расул/IdeaProjects/untitled5/IT2-2203-Web-Component-Development-Java-EE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -166,6 +161,7 @@
       <workItem from="1728621835053" duration="445000" />
       <workItem from="1728807088754" duration="5182000" />
       <workItem from="1728821988107" duration="1875000" />
+      <workItem from="1728830958005" duration="190000" />
     </task>
     <task id="LOCAL-00001" summary="Adding postgres DB">
       <option name="closed" value="true" />
@@ -287,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728811911533</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="...">
+      <option name="closed" value="true" />
+      <created>1728831057676</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728831057676</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +327,8 @@
     <MESSAGE value="added query for selecting students grades objects" />
     <MESSAGE value="added credit column" />
     <MESSAGE value="gpa calculating method" />
-    <option name="LAST_COMMIT_MESSAGE" value="gpa calculating method" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
