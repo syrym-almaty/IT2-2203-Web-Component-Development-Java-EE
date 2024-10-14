@@ -77,6 +77,7 @@ class Greeting {
 }
 
 // A simple POJO class representing a User
+
 class User {
     private String name;
     private String email;
@@ -92,7 +93,6 @@ class User {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
