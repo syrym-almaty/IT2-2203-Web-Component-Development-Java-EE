@@ -17,19 +17,23 @@ public class Book {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
+
     @Getter
-    @Setter
     private UUID id;
 
+    @Getter
     @NotBlank(message = "Title is mandatory")
     private String title;
 
+    @Getter
     @NotBlank(message = "Author is mandatory")
     private String author;
 
+    @Getter
     @Pattern(regexp = "\\d{13}", message = "ISBN must be 13 digits")
     private String isbn;
 
+    @Getter
     private boolean available;
 
     // Constructors, Getters, and Setters
