@@ -10,6 +10,18 @@
 
 > To get started, clone the repository using the command below:
 
+
+```bash
+// in case to update your branch
+
+git branch -m main Production
+git fetch origin
+git branch -u origin/Production Production
+git remote set-head origin -a
+
+```
+
+
 ```bash
 
 git clone git@github.com:syrym-almaty/IT2-2203-Web-Component-Development-Java-EE.git

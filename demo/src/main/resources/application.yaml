@@ -7,17 +7,20 @@ spring:
     driverClassName: org.h2.Driver
     username: sa
     password: password
-    platform: h2
+
 
   h2:
     console:
       enabled: true
       path: /h2-console
+    properties:
+      hibernate.dialect: org.hibernate.dialect.H2
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
 
 springdoc:
   api-docs:
@@ -26,3 +29,6 @@ springdoc:
     path: /swagger-ui.html
     operationsSorter: method
     tagsSorter: name
+
+server:
+  port: 8081
