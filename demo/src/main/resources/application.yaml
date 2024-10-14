@@ -29,3 +29,6 @@ springdoc:
     path: /swagger-ui.html
     operationsSorter: method
     tagsSorter: name
+
+server:
+  port: 8081
