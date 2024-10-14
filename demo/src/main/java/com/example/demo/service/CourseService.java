@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.CourseRepository;
+import com.example.demo.repository.CourseRepository;
 import com.example.demo.repository.StudentRepository;
 import lombok.Getter;
 import lombok.Setter;
@@ -27,9 +27,9 @@ public class CourseService {
                 .orElse(false);  // Return false if student is not found
     }
 
-    public  boolean isCourseValidData(long uuid){
-        return courseRepository.findById(uuid)
+    public boolean isCourseValidData(Long courseId) {
+        return courseRepository.findById(courseId)
                 .map(course -> course.getStudents().size() < 30) // true If students fewer than 30
-                .orElse(false); // false if Courses not found
+                .orElse(false); // false if Course not found
     }
 }

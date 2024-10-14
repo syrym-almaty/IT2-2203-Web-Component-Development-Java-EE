@@ -42,17 +42,17 @@ public class StudentService {
         return studentRepository.save(student);
     }
 
-    public Student getStudentById(UUID id) {
-        return studentRepository.findById(id).orElse(null);
+    public Student getStudentById(Long id) {
+        return (Student) studentRepository.findById(id).orElse(null);
     }
 
-    public void deleteStudent(UUID id) {
+    public void deleteStudent(Long id) {
         studentRepository.deleteById(id);
     }
 
     // Method to calculate the GPA
     public Double calculateGPA(UUID studentId) {
-        Student student = studentRepository.findById(studentId)
+        Student student = (Student) studentRepository.findById(studentId)
                 .orElseThrow(() -> new ResourceNotFoundException("Student not found"));
 
         Set<Grade> grades = gradeRepository.findByStudentId(studentId);

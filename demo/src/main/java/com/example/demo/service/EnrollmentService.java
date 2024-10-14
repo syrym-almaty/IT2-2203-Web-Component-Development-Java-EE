@@ -8,31 +8,34 @@ import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
-@Service
-public class EnrollmentService {
-    @Autowired
-    CourseService courseService;
+    @Service
+    public class EnrollmentService {
+        @Autowired
+        private StudentRepository studentRepository;
 
-    public void enrollStudentInCourse(UUID studentId, Long courseId) throws BusinessException {
-        if (courseService.isCourseValidData(courseId)) {
-            if (courseService.isStudentValidData(studentId)) {
-                Student student = courseService.getStudentRepository()
-                        .findById(studentId)
-                        .orElseThrow(() -> new ResourceNotFoundException("Student not found"));
-                Course course = courseService.getCourseRepository()
-                        .findById(courseId)
-                        .orElseThrow(() -> new ResourceNotFoundException("Course not found"));
+        @Autowired
+        private CourseRepository courseRepository;
 
-                student.getCourses().add(course);
-                course.getStudents().add(student);
+        public void enrollStudentInCourse(Long studentId, Long courseId) {
+            Student student = studentRepository.findById(studentId)
+                    .orElseThrow(() -> new ResourceNotFoundException("Student not found"));
 
-                courseService.getStudentRepository().save(student);
-                courseService.getCourseRepository().save(course);
-            } else {
-                throw new BusinessException("Student is enrolled in more than 5 courses.");
+            Course course = courseRepository.findById(courseId)
+                    .orElseThrow(() -> new ResourceNotFoundException("Course not found"));
+
+            if (student.getCourses().size() >= 5) {
+                throw new BusinessException("Student cannot enroll in more than 5 courses");
             }
-        } else {
-            throw new BusinessException("Course has more than 30 students.");
+
+            if (course.getStudents().size() >= 30) {
+                throw new BusinessException("Course cannot have more than 30 students");
+            }
+
+            student.getCourses().add(course);
+            course.getStudents().add(student);
+
+            studentRepository.save(student);
+            courseRepository.save(course);
         }
     }
 }
