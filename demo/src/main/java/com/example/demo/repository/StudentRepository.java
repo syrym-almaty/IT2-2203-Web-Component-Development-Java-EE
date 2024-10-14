@@ -10,4 +10,6 @@ import java.util.UUID;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
     Optional<Object> findById(UUID id);
+
+    void deleteById(UUID id);
 }
