@@ -19,47 +19,41 @@ public class StudentService {
         return studentRepository.findAll();
     }
 
+    public Student updateStudent(UUID id, Student updatedStudent) {
+        return studentRepository.findById(id)
+                .map(student -> {
+                    student.setName(updatedStudent.getName());
+                    student.setEmail(updatedStudent.getEmail());
+                    // Add other fields as necessary
+                    return studentRepository.save(student);
+                })
+                .orElseThrow(() -> new ResourceNotFoundException("Student not found with id " + id));
+    }
+
+    public Student partialUpdateStudent(UUID id, Student updatedStudent) {
+        return studentRepository.findById(id)
+                .map(student -> {
+                    if(updatedStudent.getName() != null){
+                        student.setName(updatedStudent.getName());
+                    }
+                    if(updatedStudent.getEmail() != null){
+                        student.setEmail(updatedStudent.getEmail());
+                    }
+                    // Add other fields as necessary
+                    return studentRepository.save(student);
+                })
+                .orElseThrow(() -> new ResourceNotFoundException("Student not found with id " + id));
+    }
+
     public Student createStudent(Student student) {
         return studentRepository.save(student);
     }
 
-    public Object getStudentById(UUID id) {
+    public Student getStudentById(UUID id) {
         return studentRepository.findById(id).orElse(null);
     }
 
     public void deleteStudent(UUID id) {
         studentRepository.deleteById(id);
     }
-
-    public Student updateStudent(UUID id, Student updatedStudent) {
-        return studentRepository.findById(id)
-                .map(student -> {
-                    student.setName(updatedStudent.getName());
-                    student.setEmail(updatedStudent.getEmail());
-
-                    return studentRepository.save(student);
-                })
-                .orElseThrow(() -> new ResourceNotFoundException("Student not found with id " + id));
-    }
-
-//    public Double calculateGPA(UUID studentId) {
-//        Student student = studentRepository.findById(studentId)
-//                .orElseThrow(() -> new ResourceNotFoundException("Student not found"));
-//
-//        Set<Grade> grades = student.getGrades();
-//        if (grades.isEmpty()) {
-//            return 0.0;
-//        }
-//
-//        double totalPoints = 0.0;
-//        int totalCredits = 0;
-//
-//        for (Grade grade : grades) {
-//            int credits = grade.getCourse().getCredits();
-//            totalPoints += grade.getScore() * credits;
-//            totalCredits += credits;
-//        }
-//
-//        return totalPoints / totalCredits;
-//    }
 }

@@ -1,12 +1,13 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
-
 import java.util.HashSet;
-import java.util.Set;
 import java.util.UUID;
+import java.util.Set;
 
 @Entity
 @Table(name = "students")
@@ -27,6 +28,7 @@ public class Student {
     private String name;
     private String email;
 
+
     @ManyToMany
     @JoinTable(
             name = "enrollments",
@@ -38,27 +40,43 @@ public class Student {
     // GPA field
     private Double gpa;
 
-    public Set<Course> getCourses() {
-        return courses;
+    public Student(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+
+    // Getters and Setters
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getEmail(){
-        return name;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Set<Course> getCourses() {
+        return courses;
     }
 
     public void setCourses(Set<Course> courses) {
         this.courses = courses;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }

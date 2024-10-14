@@ -1,10 +1,11 @@
 package com.example.demo.entity;
 
+import com.example.demo.entity.Course;
+import com.example.demo.entity.Student;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
@@ -22,13 +23,18 @@ public class Grade {
     @MapsId("studentId")
     private Student student;
 
-
-    @Getter
     @ManyToOne
     @MapsId("courseId")
     private Course course;
 
     @NotNull
-    private Double score;
+    private Double grade;
 
+    public void setGrade(Double grade) {
+        this.grade = grade;
+    }
+
+    public Double getGrade() {
+        return grade;
+    }
 }

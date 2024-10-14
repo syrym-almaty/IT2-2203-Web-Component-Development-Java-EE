@@ -35,7 +35,7 @@ public class DemoController {
 
     @Operation(summary = "Create User", description = "Creates a new user by accepting a JSON body with name and email.")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "User created successfully",
+            @ApiResponse(responseCode = "201", description = "User created successfully",
                     content = { @Content(mediaType = "application/json",
                             schema = @Schema(implementation = User.class)) }),
             @ApiResponse(responseCode = "400", description = "Invalid input data")
@@ -48,6 +48,7 @@ public class DemoController {
     }
 }
 
+// A simple POJO class to return a greeting message as JSON
 class Greeting {
     private String message;
     private String note;
@@ -57,6 +58,7 @@ class Greeting {
         this.note = note;
     }
 
+    // Getters and Setters
     public String getMessage() {
         return message;
     }
@@ -74,6 +76,7 @@ class Greeting {
     }
 }
 
+// A simple POJO class representing a User
 class User {
     private String name;
     private String email;
@@ -85,6 +88,7 @@ class User {
         this.email = email;
     }
 
+    // Getters and Setters
     public String getName() {
         return name;
     }
